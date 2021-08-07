@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoGeneratorSettingsState">
+    <option name="ignoredFields">
+      <set>
+        <option value="" />
+      </set>
+    </option>
+    <option name="moduleName" value="purchaseorder" />
+    <option name="moduleNameToSettings">
+      <map>
+        <entry key="purchaseorder">
+          <value>
+            <ModuleSettings>
+              <option name="entityPackageName" value="com.cashcrusaders.purchaseorder.entitty" />
+              <option name="entityParentDirectory" value="$PROJECT_DIR$/src/main/java" />
+              <option name="repositoryPackageName" value="com.cashcrusaders.purchaseorder.repository" />
+              <option name="repositoryParentDirectory" value="$PROJECT_DIR$/src/main/java" />
+            </ModuleSettings>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="DatabaseSettingsState">
+    <option name="database" value="cashCrusader" />
+    <option name="driverClass" value="org.h2.Driver" />
+    <option name="driverPath" value="C:\Users\Acco-user\.m2\repository\com\h2database\h2\1.4.200\h2-1.4.200.jar" />
+    <option name="language" value="en-IN" />
+    <option name="url" value="jdbc:h2:mem:cashCrusaders" />
+  </component>
+</project>

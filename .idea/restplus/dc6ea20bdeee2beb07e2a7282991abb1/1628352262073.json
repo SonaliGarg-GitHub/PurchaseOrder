@@ -1,0 +1,22 @@
+{
+  "url" : "http://localhost:8080/supplier/addSupplier?supplierName=&supplier_id=1",
+  "service" : "/supplier/addSupplier",
+  "test" : "",
+  "headerMap" : {
+    "Cache-Control" : "no-cache",
+    "Accept" : "*/*",
+    "User-Agent" : "RestAgent",
+    "Connection" : "keep-alive",
+    "Accept-Encoding" : "gzip, deflate, br",
+    "Content-Type" : "application/json"
+  },
+  "cookieMap" : { },
+  "paramMap" : null,
+  "body" : null,
+  "httpMethod" : "PUT",
+  "message" : null,
+  "time" : null,
+  "content" : "{\"timestamp\":\"2021-08-07T16:04:21.605+00:00\",\"status\":400,\"error\":\"Bad Request\",\"path\":\"/supplier/addSupplier\"}",
+  "statusCode" : 400,
+  "testResultList" : [ ]
+}

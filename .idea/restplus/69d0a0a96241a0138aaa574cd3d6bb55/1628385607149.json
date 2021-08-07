@@ -1,0 +1,22 @@
+{
+  "url" : "http://localhost:8080/placeOrder?2=10&3=5&4=6",
+  "service" : "/placeOrder",
+  "test" : "",
+  "headerMap" : {
+    "Cache-Control" : "no-cache",
+    "Accept" : "*/*",
+    "User-Agent" : "RestAgent",
+    "Connection" : "keep-alive",
+    "Accept-Encoding" : "gzip, deflate, br",
+    "Content-Type" : "application/json"
+  },
+  "cookieMap" : { },
+  "paramMap" : null,
+  "body" : null,
+  "httpMethod" : "PUT",
+  "message" : null,
+  "time" : null,
+  "content" : "{\"timestamp\":\"2021-08-08T01:20:07.099+00:00\",\"status\":400,\"error\":\"Bad Request\",\"path\":\"/placeOrder\"}",
+  "statusCode" : 400,
+  "testResultList" : [ ]
+}

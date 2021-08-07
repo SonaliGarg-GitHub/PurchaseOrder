@@ -1,0 +1,22 @@
+{
+  "url" : "http://localhost:8080/orders",
+  "service" : "/orders",
+  "test" : "",
+  "headerMap" : {
+    "Cache-Control" : "no-cache",
+    "Accept" : "*/*",
+    "User-Agent" : "RestAgent",
+    "Connection" : "keep-alive",
+    "Accept-Encoding" : "gzip, deflate, br",
+    "Content-Type" : "application/json"
+  },
+  "cookieMap" : { },
+  "paramMap" : null,
+  "body" : null,
+  "httpMethod" : "GET",
+  "message" : null,
+  "time" : null,
+  "content" : "[]",
+  "statusCode" : 200,
+  "testResultList" : [ ]
+}
