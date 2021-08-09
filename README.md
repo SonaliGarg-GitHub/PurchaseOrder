@@ -1,21 +1,22 @@
-# Getting Started
+## Getting Started
 
-### Run the Application  
-Right click PurchaseOrderApplication and click on run option
+**Run the Application**  
+``Right click PurchaseOrderApplication and click on run option
 
-### DATABASE
-After successful run, check the database @H2.
+ **Database Details**
 
-@H2 : http://localhost:8080/h2-console/
+   After successful run, check the database @H2.
+   
+   @H2 : http://localhost:8080/h2-console/
+   
+   @JDBC_URL : jdbc:h2:mem:cashCrusaders
+   
+   * SELECT * FROM  SUPPLIER ;
+   * SELECT * FROM PRODUCT;
+   * SELECT * FROM ITEMS;
+   * SELECT * FROM ORDERS ;
 
-@JDBC_URL : jdbc:h2:mem:cashCrusaders
-
-* SELECT * FROM  SUPPLIER ;
-* SELECT * FROM PRODUCT;
-* SELECT * FROM ITEMS;
-* SELECT * FROM ORDERS ;
-
-### Add Dummy Data
+**Add Dummy Data**
 
 Run these from win cmd prompt or use postman
 
@@ -35,7 +36,7 @@ Run these from win cmd prompt or use postman
 * curl --request PUT http://localhost:8080/placeOrder  -d "{  \"1\" :  10 ,  \"2\" : 10}" -H "Content-Type: application/json"
 
 ### Additional Links
-These additional references helps you check the existing data:
+These additional urls helps you check the existing data:
 
 --Show All products for supplier {2}
 * http://localhost:8080/supplier/2/products
