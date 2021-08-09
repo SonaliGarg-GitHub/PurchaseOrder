@@ -17,7 +17,7 @@ public class OrdersController {
         return orderService.findAll();
     }
 
-    @GetMapping("/orders/{orderId}")
+    @GetMapping("/order/{orderId}")
     public Orders showOrder(@PathVariable (value = "orderId") Integer orderId){
         return orderService.findOrder(orderId);
     }

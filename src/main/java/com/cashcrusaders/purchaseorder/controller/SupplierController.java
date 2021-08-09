@@ -11,33 +11,32 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/supplier")
 public class SupplierController {
 
     @Autowired
     SupplierService supplierService;
 
-    @PutMapping
+    @PutMapping("/supplier")
     public Supplier addSupplier(@RequestBody Supplier supplier) {
         return supplierService.addSupplier(supplier);
     }
 
-    @PutMapping("/{supplierId}")
+    @PutMapping("/supplier/{supplierId}")
     public Supplier updateSupplier(@PathVariable("supplierId")  Integer supplierId, @RequestBody Supplier supplier) {
         return supplierService.updateSupplier(supplierId,supplier);
     }
 
-    @PostMapping("/delete/{supplierId}")
+    @PostMapping("/supplier/delete/{supplierId}")
     public void deleteSupplier(@PathVariable("supplierId")  Integer supplierId) {
         supplierService.deleteSupplier(supplierId);
     }
     
-    @GetMapping("/{supplierId}")
+    @GetMapping("/supplier/{supplierId}")
     public Supplier findById(@PathVariable("supplierId")  Integer supplierId) {
         return supplierService.find(supplierId);
     }
 
-    @GetMapping
+    @GetMapping("/suppliers")
     public List<Supplier> showAllSuppliers() {
         return supplierService.showAllSuppliers();
     }

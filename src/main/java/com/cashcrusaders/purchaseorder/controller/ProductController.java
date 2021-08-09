@@ -37,12 +37,12 @@ public class ProductController {
         return productService.find(productId);
     }
 
-    @GetMapping("/product")
+    @GetMapping("/products")
     public List<Product> findById() {
         return productService.findAll();
     }
 
-    @GetMapping("/supplier/{supplierId}/product")
+    @GetMapping("/supplier/{supplierId}/products")
     public List<Product> findAllBySupplier(@PathVariable("supplierId")  int supplierId) {
         return productService.findAllBySupplier(supplierId);
     }

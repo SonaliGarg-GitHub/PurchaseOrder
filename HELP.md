@@ -3,10 +3,12 @@
 ### Run the Application  
 Right click PurchaseOrderApplication and click on run option
 
-### TableEntity
+### DATABASE
 After successful run, check the database @H2.
 
 @H2 : http://localhost:8080/h2-console/
+
+@JDBC_URL : jdbc:h2:mem:cashCrusaders
 
 * SELECT * FROM  SUPPLIER ;
 * SELECT * FROM PRODUCT;
@@ -33,19 +35,22 @@ Run these from win cmd prompt or use postman
 * curl --request PUT http://localhost:8080/placeOrder  -d "{  \"1\" :  10 ,  \"2\" : 10}" -H "Content-Type: application/json"
 
 ### Additional Links
-These additional references should also help you:
+These additional references helps you check the existing data:
 
 --Show All products for supplier {2}
-* http://localhost:8080/supplier/2/product
+* http://localhost:8080/supplier/2/products
 
 --Show All products
-* http://localhost:8080/product
+* http://localhost:8080/products
+
+--Show product {1}
+* http://localhost:8080//product/1
 
 --Show all supplier
-* http://localhost:8080/supplier
+* http://localhost:8080/suppliers
 
 --Show all orders
 * http://localhost:8080/orders
 
 -- Show order {2} 
-* http://localhost:8080/orders/2
+* http://localhost:8080/order/2
