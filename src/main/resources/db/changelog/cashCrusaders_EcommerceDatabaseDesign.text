@@ -43,4 +43,4 @@ Items:
 | quantity	  	| int		       | NO   |     | NULL    			    |                				          |
 | subTotal	 	  | double	     | NO   |     | NULL    			    |                				          |
 +---------------+--------------+------+-----+-------------------+---------------------------------+
-id - primary key
+id - primary key 
