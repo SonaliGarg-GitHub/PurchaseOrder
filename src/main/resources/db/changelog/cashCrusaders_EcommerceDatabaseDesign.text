@@ -1,10 +1,10 @@
 
 supplier:
 +---------------+--------------+------+-----+---------+---------------------------------+
-| Field     	  | Type         | Null | Key | Default | Extra          					|
+| Field     	  | Type         | Null | Key | Default | Extra          					        |
 +---------------+--------------+------+-----+---------+---------------------------------+
-| supplier_id	  | int(11) 	   | NO   | PRI | NULL    | auto_increment					|
-| supplier_name | varchar(255) | YES  |     | NULL    |                					|
+| supplier_id	  | int(11) 	   | NO   | PRI | NULL    | auto_increment					        |
+| supplier_name | varchar(255) | YES  |     | NULL    |                					        |
 +---------------+--------------+------+-----+---------+---------------------------------+
 supplier_id - primary key
 
