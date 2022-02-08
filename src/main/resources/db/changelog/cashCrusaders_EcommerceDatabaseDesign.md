@@ -1,45 +1,46 @@
+**Database Design For ProductPurchase :**
 
-supplier
+**supplier Table :**
 
+  supplier_id - primary key
 | Field     	  | Type         | Null | Key | Default | Extra          					        |
 |---------------|--------------|------|-----|---------|---------------------------------|
-| supplier_id	  | int(11) 	   | NO   | PRI | NULL    | auto_increment					        |
-| supplier_name | varchar(255) | YES  |     | NULL    |                					        |
+| supplier_id	  | int(11) 	   | NO   | PRI |     | auto_increment					        |
+| supplier_name | varchar(255) | YES  |     |     |                					        |
 
-**supplier_id - primary key**
 
-product:
+
+**product Table :**
+
+product_id - primary key
 | Field     	  | Type         | Null | Key | Default | Extra          					        |
 |---------------|--------------|------|-----|---------|---------------------------------|
-| product_id	  | int(11)      | NO   | PRI | NULL    | auto_increment 					        | 
-| supplier_id	  | int(11) 	   | NO   |     | NULL    | REFERENCES supplier(supplier_id)|
-| description  	| varchar(255) | YES  |     | NULL    |                					        |
-| price		  	  | float 	     | NO   |     | NULL    |                					        |
+| product_id	  | int(11)      | NO   | PRI |     | auto_increment 					        | 
+| supplier_id	  | int(11) 	   | NO   |     |     | REFERENCES supplier(supplier_id)|
+| description  	| varchar(255) | YES  |     |     |                					        |
+| price		  	  | float 	     | NO   |     |     |                					        |
 
-**product_id - primary key**
+**Orders Table:**
 
-Orders:
-
+order_id - primary key
 | Field     	  | Type         | Null | Key | Default 			    | Extra          				          |
 |---------------|--------------|------|-----|---------|---------------------------------|
-| order_id		  | int(11)      | NO   | PRI | NULL    			    | auto_increment 				          |
-| supplier_id	  | int(11) 	   | NO   | PRI | NULL    			    | REFERENCES supplier(supplier_id)|
+| order_id		  | int(11)      | NO   | PRI |     			    | auto_increment 				          |
+| supplier_id	  | int(11) 	   | NO   | PRI |     			    | REFERENCES supplier(supplier_id)|
 | ordered_date  | datetime     | NO   |     | CURRENT_TIMESTAMP | DEFAULT_GENERATED				        |
 | totalTax 		  | float 	     | NO   |     | 18    			      |                				          |
-| grantTotal 	  | float        | NO   |     | NULL    			    |                 				        |
+| grantTotal 	  | float        | NO   |     |     			    |                 				        |
 
-**order_id - primary key**
+**Items Table:**
 
-Items:
-
+id - primary key
 | Field     	  | Type         | Null | Key | Default 			    | Extra          				          |
 |---------------|--------------|------|-----|---------|---------------------------------|
-| id    		    | int(11)      | NO   | PRI | NULL    			    |  	                          	  |
-| order_id		  | int(11)      | NO   |     | NULL    			    | REFERENCES Orders(order_id)     |
-| product_id	  | int(11) 	   | NO   |     | NULL    			    | REFERENCES Product(product_id)  |
+| id    		    | int(11)      | NO   | PRI |     			    |  	                          	  |
+| order_id		  | int(11)      | NO   |     |     			    | REFERENCES Orders(order_id)     |
+| product_id	  | int(11) 	   | NO   |     |     			    | REFERENCES Product(product_id)  |
 | ordered_date  | datetime     | YES  |     | CURRENT_TIMESTAMP | DEFAULT_GENERATED				        |
-| purchasAtprice| double	     | NO   |     | NULL    			    |                				          |
-| quantity	  	| int		       | NO   |     | NULL    			    |                				          |
-| subTotal	 	  | double	     | NO   |     | NULL    			    |                				          |
+| purchasAtprice| double	     | NO   |     |     			    |                				          |
+| quantity	  	| int		       | NO   |     |     			    |                				          |
+| subTotal	 	  | double	     | NO   |     |     			    |                				          |
 
-**id - primary key **
